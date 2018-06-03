@@ -1,0 +1,1132 @@
+@import "./smart-grid.less";
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+@font-face {
+			font-family: 'ProximaNovaBold';
+			src: url('../fonts/ProximaNovaBold/ProximaNovaBold.eot');
+			src: url('../fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix')format('embedded-opentype'),
+			url('../fonts/ProximaNovaBold/ProximaNovaBold.woff') format('woff'),
+			url('../fonts/ProximaNovaBold/ProximaNovaBold.ttf') format('truetype');
+			font-style: normal;
+			font-weight: normal;
+	}
+
+
+
+//font-family: 'Open Sans', sans-serif;
+
+
+
+.header {
+
+	.headerWrapper {
+	
+	display: flex;
+	flex-wrap: wrap;
+		
+		.headerLogo, div {
+
+
+			display: inline-block;
+		} 
+
+		.headerLogo {
+
+
+
+		}
+
+
+		.headerTown {
+
+			margin-left: -4px;
+			margin-top: 20px;
+			text-transform: uppercase;
+			font-family: ProximaNovaBold;
+			font-size: 14px;
+			
+				
+
+				&__p{
+
+				border: 2px solid #f54c4f;
+				cursor: pointer;
+				padding: 10px 12px;
+			
+					
+				}
+				
+				&__p:after{
+					
+					content: "" url('../img/Shape 1.svg');
+					float:right;
+					margin-left: 6px;
+					margin-top: -2px; 
+					
+				}
+
+
+
+
+			
+
+		}
+
+
+		.headerPhone {
+		
+			font-family: ProximaNovaBold;
+			margin-left: auto;
+			margin-right: 35px;
+			padding-top: 30px;
+
+			.xs(margin-left, 0);
+
+			&__p {
+			
+			font-size: 14px;
+			}
+
+			&__p:before {
+				
+				content: "" url('../img/ph.svg');
+
+			}
+
+
+		}
+
+
+		.headerSocial {
+			
+			padding-top: 32px;
+			padding-right: 20px;
+			cursor: pointer;
+
+		}
+
+
+		.headerLang {
+
+		padding-top: 32px;
+		cursor: pointer;
+
+
+		}
+
+
+	}
+
+
+}
+
+
+.section1 {
+
+margin-top: -10px;
+
+.md(margin-top, 0);
+background-color: #0e3e7e;
+
+	.section1Wrapper {
+		
+
+	
+		.section1Navbar {
+			margin-left: 30px;
+			font-family: ProximaNovaBold;
+
+			display: flex;
+			flex-wrap: wrap;
+
+			div {
+				
+				display: inline-block;
+			}	
+
+			
+			.section1NavbarGuide {
+
+				padding: 10px 10px;
+				margin-right: 2px;
+
+				&__p {
+
+				text-transform: uppercase;
+				color: white;
+				font-size: 14px;
+				cursor: pointer;
+
+				}
+
+				&__p:hover {
+
+				color: #f54c4f;
+
+				}
+				
+				&__p:after {
+					
+					content: "" url('../img/Shape 2.svg');
+					float:right;
+					
+					margin-left: 5px;
+				}
+
+
+				&__p:hover:after {
+					
+					content: "" url('../img/Shape 2.svg');
+					float:right;
+					
+					margin-left: 5px;
+					transform: rotate(180deg);
+					transition-duration: .5s;
+				}
+
+				&__p:active:after {
+
+
+				content: "" url('../img/Shape 2.svg');
+				float:right;
+					
+				margin-left: 5px;
+				transform: rotate(360deg);
+				transition-duration: .1s;
+
+				}
+
+				
+
+				.section1NavbarGuideSpan{
+					
+					position: absolute;
+					margin-top: -10px;
+					margin-left: 45px;
+					display: none;
+
+				}
+
+				
+
+
+				.section1NavbarGuideSubmenu{
+				
+				display: none;
+				position: absolute;
+				background-color: white;
+				font-family: 'Open Sans', sans-serif;
+				margin-top: 2px;
+		
+
+					div {
+
+						display: inline-block;
+					}
+					
+					.section1NavbarGuideSubmenuCol1 {
+							
+						padding: 15px 15px;
+
+						a {
+							display: table;
+							text-decoration: none;
+							font-size: 14px;
+							color: black;
+							padding: 5px 15px;
+
+						}
+
+						a:hover {
+
+							color: #f54c4f;
+							text-decoration: underline;
+
+
+						}
+						
+						border-right: 2px solid #ebebeb;
+
+					}
+
+					.section1NavbarGuideSubmenuCol2 {
+							padding: 15px 15px;
+								
+						a { 
+							
+							display: table;
+							text-decoration: none;
+							font-size: 14px;
+							color:black;
+							padding: 5px 15px;
+
+						 }
+
+						 a:hover {
+
+							color: #f54c4f;
+							text-decoration: underline;
+
+						}
+					
+					} 
+
+
+				}
+
+
+				.show{
+
+					display: block;
+					animation: fade;
+ 			 		animation-duration: 1s;
+				}
+
+
+
+			}
+			
+			.section1NavbarExcursions {
+				padding: 10px 10px;
+				margin-right: 1px;
+
+				&__p {
+
+				text-transform: uppercase;
+				color: white;
+				font-size: 14px;
+				cursor: pointer;
+
+				}
+
+				&__p:hover {
+
+				color: #f54c4f;
+
+				}
+				
+				&__p:after {
+					
+					content: "" url('../img/Shape 2.svg');
+					float:right;
+					
+					margin-left: 5px;
+				}
+
+
+				&__p:hover:after {
+					
+					content: "" url('../img/Shape 2.svg');
+					float:right;
+					
+					margin-left: 5px;
+					transform: rotate(180deg);
+					transition-duration: .5s;
+				}
+
+				&__p:active:after {
+
+
+				content: "" url('../img/Shape 2.svg');
+				float:right;
+					
+				margin-left: 5px;
+				transform: rotate(360deg);
+				transition-duration: .1s;
+
+				}
+
+
+			} 
+
+			.section1NavbarPlaces{
+				padding: 10px 10px;
+				margin-right: 2px;
+
+				&__p {
+
+				text-transform: uppercase;
+				color: white;
+				font-size: 14px;
+				cursor: pointer;
+
+				}
+
+				&__p:hover {
+
+				color: #f54c4f;
+
+				}
+				
+				&__p:after {
+					
+					content: "" url('../img/Shape 2.svg');
+					float:right;
+					
+					margin-left: 5px;
+				}
+
+
+				&__p:hover:after {
+					
+					content: "" url('../img/Shape 2.svg');
+					float:right;
+					
+					margin-left: 5px;
+					transform: rotate(180deg);
+					transition-duration: .5s;
+				}
+
+				&__p:active:after {
+
+
+				content: "" url('../img/Shape 2.svg');
+				float:right;
+					
+				margin-left: 5px;
+				transform: rotate(360deg);
+				transition-duration: .1s;
+
+				}
+
+
+			} 
+
+			.section1NavbarEntertainments{
+				padding: 10px 10px;
+				margin-right: 2px;
+
+				&__p {
+
+				text-transform: uppercase;
+				color: white;
+				font-size: 14px;
+				cursor: pointer;
+
+				}
+
+				&__p:hover {
+
+				color: #f54c4f;
+
+				}
+				
+				&__p:after {
+					
+					content: "" url('../img/Shape 2.svg');
+					float:right;
+					
+					margin-left: 5px;
+				}
+
+
+				&__p:hover:after {
+					
+					content: "" url('../img/Shape 2.svg');
+					float:right;
+					
+					margin-left: 5px;
+					transform: rotate(180deg);
+					transition-duration: .5s;
+				}
+
+				&__p:active:after {
+
+
+				content: "" url('../img/Shape 2.svg');
+				float:right;
+					
+				margin-left: 5px;
+				transform: rotate(360deg);
+				transition-duration: .1s;
+
+				}
+
+
+			} 
+
+			.section1NavbarHotels{
+				padding: 10px 10px;
+				margin-right: 1px;
+
+				.982(display, none);
+
+
+				&__p {
+
+				text-transform: uppercase;
+				color: white;
+				font-size: 14px;
+				cursor: pointer;
+
+				}
+
+				&__p:hover {
+
+				color: #f54c4f;
+
+				}
+				
+				&__p:after {
+					
+					content: "" url('../img/Shape 2.svg');
+					float:right;
+					
+					margin-left: 5px;
+				}
+
+
+				&__p:hover:after {
+					
+					content: "" url('../img/Shape 2.svg');
+					float:right;
+					
+					margin-left: 5px;
+					transform: rotate(180deg);
+					transition-duration: .5s;
+				}
+
+				&__p:active:after {
+
+
+				content: "" url('../img/Shape 2.svg');
+				float:right;
+					
+				margin-left: 5px;
+				transform: rotate(360deg);
+				transition-duration: .1s;
+
+				}
+
+
+			} 
+
+			.section1NavbarRestaurants{
+				padding: 10px 10px;
+				margin-right: 2px;
+				.lg(display, none);
+
+				&__p {
+
+				text-transform: uppercase;
+				color: white;
+				font-size: 14px;
+				cursor: pointer;
+
+				}
+
+				&__p:hover {
+
+				color: #f54c4f;
+
+				}
+				
+				&__p:after {
+					
+					content: "" url('../img/Shape 2.svg');
+					float:right;
+					
+					margin-left: 5px;
+				}
+
+
+				&__p:hover:after {
+					
+					content: "" url('../img/Shape 2.svg');
+					float:right;
+					
+					margin-left: 5px;
+					transform: rotate(180deg);
+					transition-duration: .5s;
+				}
+
+				&__p:active:after {
+
+
+				content: "" url('../img/Shape 2.svg');
+				float:right;
+					
+				margin-left: 5px;
+				transform: rotate(360deg);
+				transition-duration: .1s;
+
+				}
+
+
+			} 
+
+
+			.section1NavbarPoster {
+
+				padding: 10px 10px;
+				margin-right: 1px;
+				.1188(display, none);
+
+				&__p {
+
+				text-transform: uppercase;
+				color: white;
+				font-size: 14px;
+				cursor: pointer;
+
+				}
+
+				&__p:hover {
+
+				color: #f54c4f;
+
+				}
+				
+				&__p:after {
+					
+					content: "" url('../img/Shape 2.svg');
+					float:right;
+					
+					margin-left: 5px;
+				}
+
+
+				&__p:hover:after {
+					
+					content: "" url('../img/Shape 2.svg');
+					float:right;
+					
+					margin-left: 5px;
+					transform: rotate(180deg);
+					transition-duration: .5s;
+				}
+
+				&__p:active:after {
+
+
+				content: "" url('../img/Shape 2.svg');
+				float:right;
+					
+				margin-left: 5px;
+				transform: rotate(360deg);
+				transition-duration: .1s;
+
+				}
+
+
+				.section1NavbarPosterSpan{
+					
+					position: absolute;
+					margin-top: -12px;
+					margin-left: 20px;
+					display: none;
+
+				}
+			
+				
+				.section1NavbarPosterSubmenu {
+					display: none;
+					position: absolute;
+					background-color: white;
+					font-family: 'Open Sans', sans-serif;
+					margin-top: 2px;
+					padding: 5px 5px;
+					width: 150px;
+						
+						a {
+							display: table;
+							text-decoration: none;
+							font-size: 14px;
+							color: black;
+							padding: 5px 15px;
+
+						}
+
+						a:hover {
+
+							color: #f54c4f;
+							text-decoration: underline;
+
+
+						}
+						
+
+				}
+
+				.show2{
+
+					display: block;
+					animation: fade;
+ 			 		animation-duration: 1s;
+				}
+
+
+
+			}
+
+
+			.section1NavbarNews {
+
+				padding: 10px 10px;
+				margin-top: 12px;
+				margin-right: 5px;
+
+				.1280(display, none);
+
+				&__a {
+					
+				text-transform: uppercase;
+				color: white;
+				font-size: 14px;
+				text-decoration: none;
+
+
+				}
+
+
+				&__a:hover{
+
+					color: #f54c4f;
+
+				}
+
+
+			}
+
+			.section1NavbarTours {
+
+				padding: 10px 10px;
+				margin-top: 12px;
+
+				.1392(display, none);
+
+				&__a {
+					
+				text-transform: uppercase;
+				color: white;
+				font-size: 14px;
+				text-decoration: none;
+
+
+				}
+
+
+				&__a:hover{
+
+					color: #f54c4f;
+
+				}
+
+
+			}
+
+			.section1NavbarHamburger {
+
+				padding: 10px 10px;
+				display: none;
+
+				.1392(display, block);
+
+
+				&__span{
+						
+					background-image: url('../img/ham.svg');
+					background-repeat: no-repeat; 
+					background-position: 10px;	
+					padding: 10px 20px;
+					margin-top: 12px;
+					cursor: pointer;
+					float: right;
+				}
+
+				.section1NavbarHamburgerSubmenu {
+
+					display: none;
+					position: absolute;
+					background-color: white;
+					font-family: 'Open Sans', sans-serif;
+					margin-top: 57px;
+					margin-left: -10px;
+					padding: 5px 5px;
+					width: 150px;
+
+						
+						&__a1 {
+							display: table;
+							text-decoration: none;
+							font-size: 14px;
+							color: black;
+							padding: 5px 15px;
+							display: none;
+
+						}
+
+						&__a1:hover {
+
+							color: #f54c4f;
+							text-decoration: underline;
+
+
+						}
+
+						&__a2 {
+							display: table;
+							text-decoration: none;
+							font-size: 14px;
+							color: black;
+							padding: 5px 15px;
+							display: none;
+
+						}
+
+						&__a2:hover {
+
+							color: #f54c4f;
+							text-decoration: underline;
+
+
+						}
+						
+						&__a3 {
+							display: table;
+							text-decoration: none;
+							font-size: 14px;
+							color: black;
+							padding: 5px 15px;
+							display: none;
+
+						}
+
+						&__a3:hover {
+
+							color: #f54c4f;
+							text-decoration: underline;
+
+
+						}
+						&__a4 {
+							display: table;
+							text-decoration: none;
+							font-size: 14px;
+							color: black;
+							padding: 5px 15px;
+							display: none;
+
+						}
+
+						&__a4:hover {
+
+							color: #f54c4f;
+							text-decoration: underline;
+
+
+						}
+						&__a5 {
+							display: table;
+							text-decoration: none;
+							font-size: 14px;
+							color: black;
+							padding: 5px 15px;
+							display: none;
+							.982(display, block);
+
+						}
+
+						&__a5:after{
+							
+							content: "" url('../img/arrow right.svg');
+							padding-left: 62px; 
+						
+
+						}
+
+						&__a5:hover {
+
+							color: #f54c4f;
+							text-decoration: underline;
+
+
+						}
+						&__a6 {
+							display: table;
+							text-decoration: none;
+							font-size: 14px;
+							color: black;
+							padding: 5px 15px;
+							display: none;
+
+							.lg(display, block);
+
+						}
+
+						&__a6:after{
+							
+							content: "" url('../img/arrow right.svg');
+							padding-left: 31px; 
+						
+
+						}
+
+						&__a6:hover {
+
+							color: #f54c4f;
+							text-decoration: underline;
+
+
+						}
+
+
+						&__a7 {
+							display: table;
+							text-decoration: none;
+							font-size: 14px;
+							color: black;
+							padding: 5px 15px;
+							display: none;
+
+							.1188(display, block);
+
+						}
+
+						&__a7:after{
+							
+							content: "" url('../img/arrow right.svg');
+							padding-left: 55px; 
+							
+
+						}
+
+						&__a7:hover {
+
+							color: #f54c4f;
+							text-decoration: underline;
+
+
+						}
+
+						.section1NavbarHamburgerSubmenuPoster{
+
+							display: none;
+							position: absolute;
+							background-color: white;
+							font-family: 'Open Sans', sans-serif;							
+							margin-left: 130px;
+							margin-top: -35px;
+							padding: 5px 5px;
+							width: 120px;
+
+							.982(margin-left, -120px);
+
+
+							a {
+								display: table;
+								text-decoration: none;
+								font-size: 14px;
+								color: black;
+								padding: 5px 15px;
+
+							}
+
+							a:hover {
+
+								color: #f54c4f;
+								text-decoration: underline;
+
+
+							}
+
+
+
+						}
+
+
+						.show4{
+
+							display: block;
+							animation: fade;
+		 			 		animation-duration: 1s;
+
+						}
+
+
+
+						&__a8 {
+							display: table;
+							text-decoration: none;
+							font-size: 14px;
+							color: black;
+							padding: 5px 15px;
+							display: none;
+							
+							.1280(display, block);
+
+						}
+
+						&__a8:hover {
+
+							color: #f54c4f;
+							text-decoration: underline;
+
+
+						}
+						&__a9 {
+							display: table;
+							text-decoration: none;
+							font-size: 14px;
+							color: black;
+							padding: 5px 15px;
+							display: none;
+
+							.1392(display, block);
+
+						}
+
+						&__a9:hover {
+
+							color: #f54c4f;
+							text-decoration: underline;
+
+
+						}
+						
+
+				}
+
+				.show3{
+
+					display: block;
+					animation: fade;
+ 			 		animation-duration: 1s;
+				}
+
+
+
+			}
+
+			.section1NavbarMap{
+
+				border-left: 1px solid #3161b6;
+				border-right: 1px solid #3161b6;
+
+				margin-left: auto;
+
+
+
+				&__p {
+					
+
+					text-transform: uppercase;
+					color: white;
+					font-size: 14px;
+					cursor: pointer;
+					padding: 5px 18px;
+					float: right;
+					margin-top: 18px;
+					.md(display, none);
+
+					
+		
+				}
+
+				&__img{
+
+					
+					
+					margin-top: 20px;
+					padding: 0 18px;
+					margin-right: -23px;
+					.md(margin-right, 0);
+					
+				}
+
+
+			}
+
+			.section1NavbarPhoto {
+				
+				
+				margin-top: 22px;
+				margin-left: -5px;
+
+				.section1NavbarPhotoSpan{
+
+					background-image: url('../img/Photo.svg');
+					
+					background-repeat: no-repeat; 
+					background-size: 60px;
+					
+					background-position: 4.5px;
+					padding: 15px 32px;
+					cursor: pointer;
+					
+
+
+				}
+
+				.section1NavbarPhotoSpan:hover{
+					
+					float: right;
+					margin-top: -5px;
+					background-image: url('../img/PA.svg');
+					background-repeat: no-repeat;
+					background-position: 20px;
+					background-size: 25px; 
+					
+				}
+
+			}
+
+			.section1NavbarSearch{
+
+				border-left: 1px solid #3161b6;
+				border-right: 1px solid #3161b6;
+
+				
+
+
+				.section1NavbarSearchSpan{
+
+
+					&__img{
+
+						margin-top: 10px;
+						
+						padding: 10px 18px;
+					}
+				}
+				
+			}
+
+		}
+
+	}
+
+}
+
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 1390px) {
+
+	
+
+}
